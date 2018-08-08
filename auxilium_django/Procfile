@@ -1,1 +1,1 @@
-web: gunicorn auxilium-django.wsgi —-log-file -
+web: gunicorn auxilium_django.wsgi —-log-file -

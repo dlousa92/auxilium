@@ -25,7 +25,7 @@ SECRET_KEY = 'b!cmf#%boa0sab4pgjx3bn9!p$k8sfqp4w_y1v8)ijb-19wbea'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'https://fathomless-waters-97733.herokuapp.com/']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'https://polar-fjord-66167.herokuapp.com/']
 
 
 # Application definition
@@ -123,7 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
+STATIC_ROOT = [
     os.path.join(BASE_DIR, 'static')
 ]
 
