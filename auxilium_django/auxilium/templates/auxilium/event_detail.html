@@ -1,0 +1,16 @@
+{% extends "auxilium/base.html" %}
+
+{% block content %}
+<div class='detailcard container row'>
+  <h2 class='detailheader'>{{ event.name }}</h2>
+  <h4 class='detaillocation'>{{ event.location }}</h4>
+  <p class='detaildate'>{{ event.date }}</p>
+  <p class='detaildescription'>{{ event.description }}</p>
+
+  <div class='detailbuttons'>
+    <button class='interaction'>Volunteer for this Event</button>
+    <a class='interaction' href="{% url 'event_edit' pk=event.pk %}">Edit this Event</a>
+    <a class='interaction' href="{% url 'event_delete' pk=event.pk %}">Delete this Event</a>
+  </div>
+</div>
+{% endblock content %}

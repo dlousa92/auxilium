@@ -1,0 +1,14 @@
+{% extends "auxilium/base.html" %}
+
+{% block content %}
+<div>
+  <h2>Fill out your Profile</h2>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="=submit">Done</button>
+  </form>
+</div>
+
+
+{% endblock content %}

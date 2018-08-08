@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F8F8F8;
+  font-family: 'Playfair Display', serif;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Styling for base.html */
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0px;
+  border-bottom: 2px solid #566E3D;
+  background: rgb(218, 102, 36);
+  color: white;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.title {
+ font-size: 4em;
+ margin: 0 20px 0px 0px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4em;
+}
+
+.navlink {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  height: 200px;
+}
+
+/* Styling for events list page */
+.eventspageheader {
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.row .col {
+  padding: 0px;
+}
+.eventcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 6px 0px #e6dada;
+  background: white;
+}
+
+.eventtitle {
+  font-size: 2em;
+  text-align: center;
+  color: rgb(218, 102, 36);
+}
+
+.eventtext {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.break {
+  background: rgb(218, 102, 36);
+  padding: 80px;
+  color: white;
+  font-family: 'Nothing You Could Do', cursive;
+  margin: 0;
+}
+
+.images {
+  height: 400px;
+  width: 100%;
+}
+/* Event Detail Page */
+.detailcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detailheader {
+  text-align: center;
+  font-size: 3em;
+}
+
+.detaillocation {
+  font-size: 1.8em;
+}
+
+.detaildate {
+  font-size: 1.4em;
+  margin-bottom: 50px;
+}
+
+.detaildescription {
+  padding: 5px;
+  height: 100px;
+  margin-bottom: 100px;
+  font-size: 1.2em;
+  text-align: center;
+  width: 70%;
+}
+
+.detailbuttons {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  margin: 20px;
+}
+
+.interaction {
+  margin-bottom: 10px;
+}

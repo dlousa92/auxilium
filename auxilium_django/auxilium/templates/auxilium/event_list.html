@@ -1,0 +1,26 @@
+{% extends "auxilium/base.html" %}
+
+{% block content %}
+
+<main class='container row maincontent'>
+  <h2 class='eventspageheader'>Events</h2>
+
+    {% for event in events %}
+      <div class='col s12 m6 xl4 eventcard'>
+        <h3 class='eventtitle'>{{event.name}}</h3>
+        <p class='eventtext'>{{event.location}}</p>
+        <p class='eventtext'>{{event.date}}</p>
+        <p class='eventtext'>Volunteers Needed: {{event.volunteers_needed}}</p>
+        <a class='eventtext' href="{% url 'event_detail' pk=event.pk %}">View Details</a>
+      </div>
+    {% endfor %}
+</main>
+
+<h2 class='eventspageheader break'>Join us & Make a Difference</h2>
+  
+<div class='images container row'>
+  <img class='col s12' src="https://images.pexels.com/photos/1083619/pexels-photo-1083619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+  <img class='col s12' src="https://images.pexels.com/photos/433495/pexels-photo-433495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+  <img class='col s12' src="https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+</div>
+{% endblock content %}

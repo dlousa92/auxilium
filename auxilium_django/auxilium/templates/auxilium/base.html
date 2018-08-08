@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Auxilium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Playfair+Display:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="{% static 'css/materialize.min.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/main.css' %}"/>
+</head>
+<body>
+  <header class='header'>
+    <a class='navlink' href="/"><h1 class='title'>Auxilium</h1></a>
+    <div class='nav'>
+      <ul class='navbar'>
+        <li>
+          <a class='navlink' href="/">Events</a>
+        </li>
+          {% if user.is_authenticated %}
+            <li>
+              <a class='navlink' href="{% url 'profile_detail' pk=user.pk %}">View Profile</a>
+            </li>
+            <li>
+              <a class='navlink' href="/event/new">New Event</a>
+            </li>
+            <li>
+              <a class='navlink' href="{% url 'logout' %}">Logout</a>
+            </li>
+          {% else %}
+            <li>
+              <a class='navlink' href="{% url 'login' %}">Login</a>
+            </li>
+            <li>
+              <a class='navlink' href="{% url 'signup' %}">Sign Up</a>
+            </li>
+          {% endif %}
+      </ul>
+    </div>
+  </header>
+  
+  {% block content %}
+  {% endblock %}
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
