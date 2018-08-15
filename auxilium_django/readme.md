@@ -2,7 +2,7 @@
 
 Auxilium is designed to connect organizations or individuals who are looking for volunteers with people looking to help out in their local community.
 
-![Auxilium Desktop Version](https://raw.githubusercontent.com/dlousa92/auxilium/master/planning/img/desktopversion.png)
+![Auxilium Desktop Version](https://raw.githubusercontent.com/dlousa92/auxilium/auxilium_django/master/planning/img/desktopversion.png)
 
 # User Stories
 
